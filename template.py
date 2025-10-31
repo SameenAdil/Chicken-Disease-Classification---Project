@@ -3,7 +3,7 @@ from pathlib import Path
 import logging
 
 logging.basicConfig(level= logging.INFO, format='[%(asctime)s]: %(message)s:')
-
+                    #in this file i use default (root) logger
 project_name = "cnnClassifier"
 
 list_of_files = [
@@ -39,7 +39,7 @@ for filepath in list_of_files:
         with open(filepath, 'w') as f:
             pass 
 
-        logging.info(f"creating empty file: {filepath}")
+        logging.info(f"creating empty file: {filepath}")    #default (root) logger
 
     else:
         logging.info(f"{filename} is already exists")
